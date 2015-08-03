@@ -6,11 +6,19 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wgpsutherland/tinx"
+  },
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/wgpsutherland/tinx/issues"
+  },
   "keywords": [
     "time",
     "constants"
   ],
-  "author": "wgpsutherland",
+  "author": "Will Sutherland",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.2.0",
