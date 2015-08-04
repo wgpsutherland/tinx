@@ -17,4 +17,42 @@ TinX
     
 ## Documentation
 
-*to come*
+### milliseconds
+
+* in.a.millisecond
+* in.a.second
+* in.a.minute
+* in.an.hour
+* in.a.day
+* in.a.week
+* in.a.year
+    
+### seconds
+
+* in.a.second
+* in.a.minute
+* in.an.hour
+* in.a.day
+* in.a.week
+* in.a.year
+    
+### minutes
+
+* in.a.minute
+* in.an.hour
+* in.a.day
+* in.a.week
+* in.a.year
+    
+### hours
+
+* in.an.hour
+* in.a.day
+* in.a.week
+* in.a.year
+    
+### days
+
+* in.a.day
+* in.a.week
+* in.a.year
