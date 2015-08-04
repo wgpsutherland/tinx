@@ -1,49 +1,37 @@
-// hour is 1
 var convert = function (x) {
-    var millisecond, second, minute, hour, day, week, year;
-    hour = x;
-    day = hour * 24;
-    week = day * 7;
-    year = day * 365;
-    minute = hour / 60;
-    second = minute / 60;
-    millisecond = second / 1000;
-    return {
-        an: {
-            hour: hour
-        },
-        a: {
-            millisecond: millisecond,
-            second: second,
-            minute: minute,
-            hour: hour,
-            day: day,
-            week: week,
-            year: year
-        }
-    }
+    var obj = {a:{}, an:{}};
+    obj.a.day = x;
+    obj.a.week = obj.a.day * 7;
+    obj.a.year = obj.a.day * 365;
+    if(x !== modifier.d) obj.an.hour = x / 24;
+    if(x !== modifier.h && obj.an.hour !== undefined) obj.a.minute = obj.an.hour / 60;
+    if(x !== modifier.m && obj.a.minute !== undefined) obj.a.second = obj.a.minute / 60;
+    if(x !== modifier.s && obj.a.second !== undefined) obj.a.millisecond = obj.a.second / 1000;
+    return obj;
+};
+
+var modifier = {
+    ms: 60 * 60 * 1000 * 24,
+    s: 60 * 60 * 24,
+    m: 60 * 24,
+    h: 24,
+    d: 1
 };
 
 module.exports = {
     milliseconds: {
-        in: convert(60 * 60 * 1000)
+        in: convert(modifier.ms)
     },
     seconds: {
-        in: convert(60 * 60)
+        in: convert(modifier.s)
     },
     minutes: {
-        in: convert(60)
+        in: convert(modifier.m)
     },
     hours: {
-        in: convert(1)
+        in: convert(modifier.h)
     },
     days: {
-        in: convert(1 / 24)
-    },
-    weeks: {
-        in: convert(1 / (24 * 7))
-    },
-    years: {
-        in: convert(1 / (24 * 7 * 52))
+        in: convert(modifier.d)
     }
 };
