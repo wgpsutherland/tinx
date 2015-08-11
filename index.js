@@ -4,9 +4,9 @@ var convert = function (x) {
     obj.a.week = obj.a.day * 7;
     obj.a.year = obj.a.day * 365;
     if(x !== modifier.d) obj.an.hour = x / 24;
-    if(x !== modifier.h && obj.an.hour !== undefined) obj.a.minute = obj.an.hour / 60;
-    if(x !== modifier.m && obj.a.minute !== undefined) obj.a.second = obj.a.minute / 60;
-    if(x !== modifier.s && obj.a.second !== undefined) obj.a.millisecond = obj.a.second / 1000;
+    if(x !== modifier.h && obj.an.hour) obj.a.minute = obj.an.hour / 60;
+    if(x !== modifier.m && obj.a.minute) obj.a.second = obj.a.minute / 60;
+    if(x !== modifier.s && obj.a.second) obj.a.millisecond = obj.a.second / 1000;
     return obj;
 };
 
