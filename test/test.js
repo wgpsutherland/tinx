@@ -3,7 +3,7 @@ var expect = chai.expect;
 
 var t = require('../index.js');
 
-describe('testing tinx', function () {
+describe('testing tinx.js', function () {
     describe('milliseconds', function () {
         it('should have the correct amount', function () {
             expect(t.milliseconds.in.a.millisecond).to.equal(1);
