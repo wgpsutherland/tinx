@@ -9,11 +9,11 @@ TinX
     
 ## Use
 
-    t = require('tinx');
+    var t = require('tinx');
     
-    console.log(t.milliseconds.in.a.second) // 1000
-    console.log(t.seconds.in.an.hour) // 3600
-    console.log(t.hours.in.a.day) // 24
+    console.log(t.milliseconds.in.a.second); // 1000
+    console.log(t.seconds.in.an.hour); // 3600
+    console.log(t.hours.in.a.day); // 24
     
 ## Documentation
 
