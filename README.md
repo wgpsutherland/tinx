@@ -1,7 +1,7 @@
 TinX
 =====
 
-"T in X" - A simple time constants library.
+"T in X" - A simple time constants library, written in JavaScript.
 
 ## Installation
 

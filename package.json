@@ -1,11 +1,10 @@
 {
   "name": "tinx",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple time constants library.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register",
-    "test-watch": "mocha --compilers coffee:coffee-script/register"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
