@@ -1,7 +1,7 @@
 chai = require('chai');
 expect = chai.expect;
 
-t = require '../index.coffee'
+t = require '../src/index.coffee'
 
 describe 'testing tinx.coffee', ->
   describe 'milliseconds', ->

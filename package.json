@@ -1,9 +1,10 @@
 {
   "name": "tinx",
-  "version": "1.0.0",
-  "description": "A simple time constants library, written in CoffeeScript.",
-  "main": "index.coffee",
+  "version": "1.0.1",
+  "description": "A simple time constants library, written in CoffeeScript, usable in JavaScript.",
+  "main": "lib/index.js",
   "scripts": {
+    "prepublish": "coffee --compile --output lib src",
     "test": "mocha --compilers coffee:coffee-script/register",
     "test-watch": "mocha --compilers coffee:coffee-script/register"
   },
@@ -24,9 +25,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.2.0",
-    "mocha": "^2.2.5"
-  },
-  "dependencies": {
+    "mocha": "^2.2.5",
     "coffee-script": "^1.9.3"
   }
 }
