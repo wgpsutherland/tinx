@@ -1,8 +1,8 @@
 {
   "name": "tinx",
-  "version": "0.1.0",
-  "description": "A simple time constants library.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A simple time constants library, written in CoffeeScript.",
+  "main": "index.coffee",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register",
     "test-watch": "mocha --compilers coffee:coffee-script/register"
@@ -17,7 +17,8 @@
   },
   "keywords": [
     "time",
-    "constants"
+    "constants",
+    "CoffeeScript"
   ],
   "author": "Will Sutherland",
   "license": "ISC",
