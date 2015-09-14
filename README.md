@@ -3,6 +3,8 @@ TinX
 
 "T in X" - A simple time constants library, written in CoffeeScript, usable in JavaScript.
 
+Great for easily readable code involving time.
+
 ## Installation
 
     $ npm install tinx
